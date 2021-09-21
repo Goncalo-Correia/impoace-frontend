@@ -2,3 +2,33 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*---- COLOR ----*/
+.color-white {
+    color: #fff;
+}
+
+/*---- HEIGHT ----*/
+.height-40 {
+    height: 40px;
+}
+
+.height-80 {
+    height: 80px;
+}
+
+
+/*---- BOOTSTRAP ADDITONAL ----*/
+    
+/* font size */
+.fs-13px {
+    font-size: 13px;
+}
+
+.fs-15px {
+    font-size: 15px;
+}
+
+.fs-17px {
+    font-size: 17px;
+}
