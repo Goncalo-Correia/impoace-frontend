@@ -1,12 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -63,14 +54,16 @@
 
   <mat-toolbar-row class="d-flex justify-content-between height-80 shadow">
 
-    <div class="text-success logo h1">Impoace</div>
+    <div class="text-success h1">Impoace</div>
 
     <div class="d-flex">
-      <div class="mx-4">Início</div>
-      <div class="mx-4">Empresa</div>
-      <div class="mx-4">Serviços</div>
-      <div class="mx-4">Loja</div>
-      <div class="mx-4">Contatos</div>
+
+      <div routerLink="/Home" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center px-4">Início</div>
+      <div routerLink="/Company" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center px-4">Empresa</div>
+      <div routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center px-4">Serviços</div>
+      <div routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center px-4">Loja</div>
+      <div routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center px-4">Contatos</div>
+
     </div>
 
     <div class="d-flex">

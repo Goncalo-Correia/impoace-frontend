@@ -9,6 +9,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 /*---- HEIGHT ----*/
+.height-inherit {
+    height: inherit;
+}
+
 .height-40 {
     height: 40px;
 }
@@ -17,6 +21,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     height: 80px;
 }
 
+/*---- CURSOR ----*/
+.cursor-pointer {
+    cursor: pointer;
+}
 
 /*---- BOOTSTRAP ADDITONAL ----*/
     
