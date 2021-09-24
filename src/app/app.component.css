@@ -1,3 +1,5 @@
 .active-router-link {
-    background-color: #c3d7ce;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
 }
