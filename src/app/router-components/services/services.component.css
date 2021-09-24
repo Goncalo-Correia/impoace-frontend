@@ -1,0 +1,13 @@
+#services-equipment-container span {
+    color: #00836C;
+    font-size: 18px;
+    font-family: open-sans, sans-serif;
+    font-weight: 700;
+}
+
+#services-equipment-container .row span {
+    color: #757272;
+    font-size: 18px;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+}

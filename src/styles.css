@@ -3,6 +3,13 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+#page {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+}
+
 /*---- COLOR ----*/
 .color-white {
     color: #fff;
