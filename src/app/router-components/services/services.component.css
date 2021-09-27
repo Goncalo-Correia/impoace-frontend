@@ -1,10 +1,11 @@
-#services-equipment-container span {
+.services-grid .services-grid-list {
     font-size: 18px;
     font-family: open-sans, sans-serif;
     font-weight: 700;
+    color: var(--primary-color);
 }
 
-#services-equipment-container .row span {
+.services-grid .services-grid-item {
     color: #757272;
     font-size: 18px;
     font-family: open-sans, sans-serif;

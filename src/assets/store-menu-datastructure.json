@@ -1,0 +1,232 @@
+[
+    {
+        "id": "ar-condicionado",
+        "label": "Ar condicionado",
+        "subMenus": [
+            {
+                "id":"ar-condicionado_refrigeração",
+                "label": "Refrigeração"
+            }
+        ]
+    },
+    {
+        "id": "aspiradores",
+        "label": "Aspiradores",
+        "subMenus": [
+            {
+                "id":"aspiradores_peças",
+                "label": "Peças"
+            },
+            {
+                "id": "aspiradores_sacos",
+                "label": "Sacos"
+            }
+        ]
+    },
+    {
+        "id": "caldeiras-ferros",
+        "label": "Caldeiras/Ferros",
+        "subMenus": [
+            {
+                "id":"caldeiras-ferros_peças",
+                "label": "Peças"
+            },
+            {
+                "id": "aspiradores_sacos",
+                "label": "Sacos"
+            }
+        ]
+    },
+    {
+        "id": "cilindros",
+        "label": "Cilindros",
+        "subMenus": [
+            {
+                "id":"cilindros_anodos",
+                "label": "Ânodos"
+            },
+            {
+                "id": "cilindros_falange-junta",
+                "label": "Junta"
+            },
+            {
+                "id": "cilindros_modulos-eletronicos",
+                "label": "Módulos eletrónicos"
+            },
+            {
+                "id": "cilindros_resistencias",
+                "label": "Resistências"
+            },
+            {
+                "id": "cilindros_termostato",
+                "label": "Termostato"
+            },
+            {
+                "id": "cilindros_valvula-de-segurança",
+                "label": "Válvula de segurança"
+            }
+        ]
+    },
+    {
+        "id": "diversos",
+        "label": "Diversos"
+    },
+    {
+        "id": "esquentadores",
+        "label": "Esquentadores",
+        "subMenus": [
+            {
+                "id":"esquentadores_automaticos-de-agua",
+                "label": "Automáticos de água"
+            },
+            {
+                "id": "esquentadores_automaticos-de-gas",
+                "label": "Automáticos de gás"
+            },
+            {
+                "id": "esquentadores_cabos-unidades-de-igniçao",
+                "label": "Cabos / Unidades ignição"
+            },
+            {
+                "id": "esquentadores_caixas-de-pilhas",
+                "label": "Caixas de pilhas"
+            },
+            {
+                "id": "esquentadores_casquilhos",
+                "label": "Casquilhos"
+            },
+            {
+                "id": "esquentadores_diversos",
+                "label": "Diversos"
+            },
+            {
+                "id": "esquentadores_filtros",
+                "label": "Filtros"
+            },
+            {
+                "id": "esquentadores_hidrogeradores",
+                "label": "Hidrogeradores"
+            },
+            {
+                "id": "esquentadores_injectores",
+                "label": "Injectores"
+            },
+            {
+                "id": "esquentadores_isqueiros",
+                "label": "Isqueiros"
+            },
+            {
+                "id": "esquentadores_manipuladores-adaptadores",
+                "label": "Manipuladores/Adaptadores"
+            },
+            {
+                "id": "esquentadores_membranas",
+                "label": "Membranas"
+            },
+            {
+                "id": "esquentadores_microswitch-interruptores",
+                "label": "Microswitch/Interruptores"
+            },
+            {
+                "id": "esquentadores_modulos-eletronicos",
+                "label": "Módulos eletrónicos"
+            },
+            {
+                "id": "esquentadores_orings-vedantes",
+                "label": "Orings/Vedantes"
+            },
+            {
+                "id": "esquentadores_orings-vedantes",
+                "label": "Orings/Vedantes"
+            },
+            {
+                "id": "esquentadores_pernos-pratos-de-valvula",
+                "label": "Pernos/Pratos de válvula"
+            },
+            {
+                "id": "esquentadores_pressostatos",
+                "label": "Pressostatos"
+            },
+            {
+                "id": "esquentadores_reguladores-estabilizadores-caudal",
+                "label": "Reguladores/Estabiliz. caudal"
+            },
+            {
+                "id": "esquentadores_selectores-caudal",
+                "label": "Seletores de caudal"
+            },
+            {
+                "id": "esquentadores_selectores-gas",
+                "label": "Sensores de gás"
+            },
+            {
+                "id": "esquentadores_sensores-limitadores",
+                "label": "Sensores/Limitadores"
+            },
+            {
+                "id": "esquentadores_sondas-velas",
+                "label": "Sondas/velas"
+            },
+            {
+                "id": "esquentadores_tampas-automatico-agua",
+                "label": "Tampas automático água"
+            },
+            {
+                "id": "esquentadores_termopares",
+                "label": "Termopares"
+            },
+            {
+                "id": "esquentadores_tubos-mangueiras-ligação",
+                "label": "Tubos/Mangueiras ligação"
+            },
+            {
+                "id": "esquentadores_tubos-queimador-piloto",
+                "label": "Tubos/Queimador piloto"
+            },
+            {
+                "id": "esquentadores_valvula-gas",
+                "label": "Válvula de gás"
+            },
+            {
+                "id": "esquentadores_venturis",
+                "label": "Venturis"
+            }
+        ]
+    },
+    {
+        "id": "exaustores",
+        "label": "Exaustores",
+        "subMenus": [
+            {
+                "id": "exaustores_peças",
+                "label": "Peças"
+            }
+        ]
+    },
+    {
+        "id": "fogoes-forno-queima",
+        "label": "Fogões / Forno / Queima",
+        "subMenus": [
+            {
+                "id": "fogoes-forno-queima_comutadores-selectores",
+                "label": "Comutadores/Seletores"
+            },
+            {
+                "id": "fogoes-forno-queima_espalhadores",
+                "label": "Comutadores/Seletores"
+            },
+            {
+                "id": "fogoes-forno-queima_flexiveis-mangueiras-gas",
+                "label": "Flexíveis/Mangueiras gás"
+            },
+            {
+                "id": "fogoes-forno-queima_flexiveis-grelhas",
+                "label": "Grelhas"
+            },
+            {
+                "id": "fogoes-forno-queima_flexiveis-grelhas",
+                "label": "Grelhas"
+            }
+        ]
+    }
+]
