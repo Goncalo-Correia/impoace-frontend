@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { CommonModule } from "@angular/common";
 
 @Component({
     selector: 'store-router',
@@ -7,8 +8,9 @@ import { HttpClient } from "@angular/common/http";
     styleUrls: ['./store.component.css']
 })
 
-export class StoreComponent implements OnInit{
+export class StoreComponent implements OnInit {
 
+    checkboxColor: string = "#00836c";
     storeMenuDataStructure: any = [];
 
     constructor(private httpClient: HttpClient) {

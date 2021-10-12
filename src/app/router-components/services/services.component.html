@@ -1,6 +1,6 @@
 <div class="services-grid">
 
-    <div class="services-grid-list row">
+    <div #servicesGridList class="services-grid-list row" (window:resize)="onWindowResize()">
         <div class="col-12 mb-3">
             <span>Serviços de reparação</span>
         </div>
@@ -11,8 +11,8 @@
     </div>
 
     <div class="row">
-        <div class="services-grid-item col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-5">
-            <img src="assets/images/lava%20roupa%20icones%20eletrodom%c3%a9sticos%20impoace-01.png?crc=4108630866" alt="">
+        <div #initialServicesGridItem class="services-grid-item col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-5">
+            <img #initialServicesGridItemImage src="assets/images/lava%20roupa%20icones%20eletrodom%c3%a9sticos%20impoace-01.png?crc=4108630866" alt="">
             <span class="mt-2">Máquinas de lavar roupa</span>
         </div>
         <div class="services-grid-item col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center mb-5">
