@@ -1,15 +1,85 @@
-<h1 mat-dialog-title>Favorite Animal</h1>
-<div mat-dialog-content>
-  My favorite animal is:
-  <ul>
-    <li>
-      <span *ngIf="data.animal === 'panda'">&#10003;</span> Panda
-    </li>
-    <li>
-      <span *ngIf="data.animal === 'unicorn'">&#10003;</span> Unicorn
-    </li>
-    <li>
-      <span *ngIf="data.animal === 'lion'">&#10003;</span> Lion
-    </li>
-  </ul>
+<div>
+  <div class="row">
+    <div class="col py-3">
+      {{data.label}}
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-6 p-3">
+      <div class="row">
+        <form>
+          <div class="col"> 
+            <mat-form-field appearance="fill">
+              <mat-label>Nome</mat-label>
+              <input matInput placeholder="O seu nome">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="O seu email">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Telemóvel ou telefone</mat-label>
+              <input matInput placeholder="O seu número">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Endereço</mat-label>
+              <input matInput placeholder="Rua, andar, nº">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Cidade</mat-label>
+              <input matInput placeholder="Cidade">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Código postal</mat-label>
+              <input matInput placeholder="O seu código postal">
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-6 p-3">
+      <div class="row">
+        <form>
+          <div class="col"> 
+            <mat-form-field appearance="fill">
+              <mat-label>Marca da sua máquina</mat-label>
+              <input matInput placeholder="Teka, Samsung, Wirlpool, ...">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Modelo</mat-label>
+              <input matInput placeholder="Escreva os dados do modelo">
+            </mat-form-field>
+          </div>
+
+          <div class="col">
+            <mat-form-field appearance="fill">
+              <mat-label>Mensagem</mat-label>
+              <textarea rows="5" matInput placeholder="Descreva a avaria da sua máquina"></textarea>
+            </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
 </div>

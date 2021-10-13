@@ -13,13 +13,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 import { StoreComponent } from './router-components/store/store.component';
+import { DialogOverview_ServicesReport } from './router-components/services/services.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StoreComponent
+    StoreComponent,
+    DialogOverview_ServicesReport
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,12 @@ import { StoreComponent } from './router-components/store/store.component';
     MatIconModule,
     MatBadgeModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule,
+    MatInputModule
+  ],
+  entryComponents: [
+    DialogOverview_ServicesReport
   ],
   providers: [],
   bootstrap: [AppComponent]
