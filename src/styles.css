@@ -44,19 +44,28 @@ body {
     cursor: pointer;
 }
 
+/*---- FONT WEIGHT ----*/
+.font-bold {
+    font-weight: bold;
+}
+
 /*---- BOOTSTRAP ADDITONAL ----*/
     
 /* font size */
-.fs-13px {
+.fs-13 {
     font-size: 13px;
 }
 
-.fs-15px {
+.fs-15 {
     font-size: 15px;
 }
 
-.fs-17px {
+.fs-17 {
     font-size: 17px;
+}
+
+.fs-20 {
+    font-size: 20px;
 }
 
 /* row */

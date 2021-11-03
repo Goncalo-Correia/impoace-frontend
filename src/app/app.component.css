@@ -1,6 +1,5 @@
 .active-router-link {
-    color: white;
-    background-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .toolbar-icon {

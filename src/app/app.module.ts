@@ -18,12 +18,16 @@ import { MatInputModule } from '@angular/material/input';
 
 import { StoreComponent } from './router-components/store/store.component';
 import { DialogOverview_ServicesReport } from './router-components/services/services.component';
+import { ContactBarComponent } from './contact-bar-component/contact-bar.component';
+import { ServiceCardComponent } from './service-cards-component/service-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
-    DialogOverview_ServicesReport
+    DialogOverview_ServicesReport,
+    ContactBarComponent,
+    ServiceCardComponent
   ],
   imports: [
     BrowserModule,

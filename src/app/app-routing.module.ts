@@ -8,7 +8,6 @@ import { ContactComponent } from './router-components/contact/contact.component'
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
-  { path: 'Company', component: CompanyComponent },
   { path: 'Services', component: ServicesComponent },
   { path: 'Store', component: StoreComponent },
   { path: 'Contact', component: ContactComponent }
