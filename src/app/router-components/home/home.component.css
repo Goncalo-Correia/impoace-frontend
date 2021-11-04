@@ -1,0 +1,12 @@
+.home-card-image {
+    width: 500px;
+}
+
+.home-card-link {
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.home-card-link:hover {
+    cursor: pointer;
+}

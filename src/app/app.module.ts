@@ -15,19 +15,18 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 import { StoreComponent } from './router-components/store/store.component';
-import { DialogOverview_ServicesReport } from './router-components/services/services.component';
-import { ContactBarComponent } from './contact-bar-component/contact-bar.component';
-import { ServiceCardComponent } from './service-cards-component/service-cards.component';
+import { ContactBarComponent } from './bottom-bar-component/bottom-bar.component';
+import { Dialog_HomeReport } from './router-components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
-    DialogOverview_ServicesReport,
-    ContactBarComponent,
-    ServiceCardComponent
+    Dialog_HomeReport,
+    ContactBarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,10 +40,11 @@ import { ServiceCardComponent } from './service-cards-component/service-cards.co
     MatListModule,
     MatExpansionModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   entryComponents: [
-    DialogOverview_ServicesReport
+    Dialog_HomeReport
   ],
   providers: [],
   bootstrap: [AppComponent]

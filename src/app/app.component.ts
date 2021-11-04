@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,27 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 export class AppComponent {
   title = 'impoace-frontend';
+
+  constructor(private router: Router) {
+    router.events.subscribe(val => {
+      if (val instanceof NavigationEnd) {
+        if (val.url == "/Services") {
+          this.scrollToServices();
+        } else {
+          this.scrollToTop();
+        }
+      }
+    });
+  }
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+  }
+
+  scrollToServices(): void {
+    var height = document.getElementById("homeCardImage")!.offsetTop; 
+    var navbarHeight = document.getElementById("navBar")!.offsetHeight;
+    height -= navbarHeight;
+    window.scrollTo(0, height)
+  }
 }

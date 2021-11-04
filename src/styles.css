@@ -7,7 +7,7 @@
 html, body { height: 100%; }
 body { 
     margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-family: Roboto; 
     min-width: fit-content;
 }
 
@@ -49,6 +49,59 @@ body {
     font-weight: bold;
 }
 
+/*---- POSITION ----*/
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.right-10 {
+    right: 10px;
+}
+
+/*---- TEXT ALIGN ----*/
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+/*---- PADDING ----*/
+.pl-5 {
+    padding-left: 5px;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+/*---- MARGIN ----*/
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+
 /*---- BOOTSTRAP ADDITONAL ----*/
     
 /* font size */
@@ -66,6 +119,10 @@ body {
 
 .fs-20 {
     font-size: 20px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 /* row */
