@@ -12,3 +12,25 @@
     background-color: white;
     z-index: 1;
 }
+
+.go-to-top-button {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    display: none;
+    border-radius: 25%;
+    opacity: 70%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-to-top-button:hover {
+    cursor: pointer;
+}
+
+.go-to-top-button-visible {
+    display: flex;
+}

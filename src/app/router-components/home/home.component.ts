@@ -20,9 +20,9 @@ export class HomeComponent {
 
     }
 
-    openDialog(label: string): void {
+    openDialog(): void {
         const dialogRef = this.dialog.open(Dialog_HomeReport, {
-          data: {label: label}
+          data: {label: "máquina"}
         });
     
         dialogRef.afterClosed().subscribe(result => {
