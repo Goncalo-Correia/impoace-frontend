@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 :root {
     --primary-color: #00836c;
@@ -38,6 +39,12 @@ body {
 .height-80 {
     height: 80px;
 }
+
+/*---- WIDTH ----*/
+.width-100 {
+    width: 100%;
+}
+
 
 /*---- CURSOR ----*/
 .cursor-pointer {
@@ -142,4 +149,24 @@ body {
 /* row */
 .row {
     --bs-gutter-x: 0;
+}
+
+/*---- ANUGLAR MATERIAL ----*/
+
+  
+.mat-focused .mat-form-field-label{
+    color: var(--primary-color) !important;
+}
+  
+.mat-form-field-underline{
+    background-color: var(--primary-color) !important;
+}
+
+.mat-form-field-ripple{
+    background-color: var(--primary-color) !important;
+}
+
+.mat-impoace {
+    background-color: var(--primary-color);
+    color: white;
 }

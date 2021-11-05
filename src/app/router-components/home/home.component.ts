@@ -22,7 +22,7 @@ export class HomeComponent {
 
     openDialog(): void {
         const dialogRef = this.dialog.open(Dialog_HomeReport, {
-          data: {label: "máquina"}
+          data: {label: "Relatório de reparação"}
         });
     
         dialogRef.afterClosed().subscribe(result => {

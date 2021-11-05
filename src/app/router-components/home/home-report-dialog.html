@@ -1,18 +1,18 @@
 <div>
   <div class="row">
-    <div class="col py-3">
+    <div class="col py-3 fs-17 font-bold">
       {{data.label}}
     </div>
   </div>
   <div class="row">
 
-    <div class="col-6 p-3">
+    <div class="col col-md-6 p-3">
       <div class="row">
         <form>
           <div class="col"> 
-            <mat-form-field appearance="fill">
+            <mat-form-field class="example-full-width" appearance="fill">
               <mat-label>Nome</mat-label>
-              <input matInput placeholder="O seu nome">
+              <input matInput placeholder="O seu nume">
             </mat-form-field>
           </div>
 
@@ -54,13 +54,13 @@
       </div>
     </div>
 
-    <div class="col-6 p-3">
+    <div class="col col-md-6 p-3">
       <div class="row">
         <form>
           <div class="col"> 
             <mat-form-field appearance="fill">
               <mat-label>Marca da sua máquina</mat-label>
-              <input matInput placeholder="Teka, Samsung, Wirlpool, ...">
+              <input matInput placeholder="Teka, Samsung, Wirlpool...">
             </mat-form-field>
           </div>
 
@@ -74,8 +74,19 @@
           <div class="col">
             <mat-form-field appearance="fill">
               <mat-label>Mensagem</mat-label>
-              <textarea rows="5" matInput placeholder="Descreva a avaria da sua máquina"></textarea>
+              <textarea rows="10" matInput placeholder="Descreva a avaria da sua máquina"></textarea>
             </mat-form-field>
+          </div>
+
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <button mat-button (click)="onNoClick()">Cancelar</button>
+              </div>
+              <div class="col">
+                <button class="width-100" mat-button [mat-dialog-close]="" color="impoace" cdkFocusInitial>Submeter</button>
+              </div>
+            </div>
           </div>
         </form>
       </div>
