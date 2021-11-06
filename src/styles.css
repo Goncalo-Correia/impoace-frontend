@@ -146,6 +146,25 @@ body {
     font-size: 25px;
 }
 
+@media only screen and (max-width: 480px) {
+    .fs-nav-bar {
+      font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .fs-nav-bar {
+      font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .fs-nav-bar {
+      font-size: 17px;
+    }
+}
+
+
 /* row */
 .row {
     --bs-gutter-x: 0;
@@ -169,4 +188,16 @@ body {
 .mat-impoace {
     background-color: var(--primary-color);
     color: white;
+}
+
+@media only screen and (max-width: 350px) {
+    .mat-form-field-wrapper {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .mat-form-field-wrapper {
+      width: 500px;
+    }
 }

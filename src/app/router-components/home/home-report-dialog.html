@@ -4,11 +4,10 @@
       {{data.label}}
     </div>
   </div>
-  <div class="row">
+  <mat-dialog-content>
 
-    <div class="col col-md-6 p-3">
-      <div class="row">
-        <form>
+      <form>
+        <div class="row">
           <div class="col"> 
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label>Nome</mat-label>
@@ -50,13 +49,11 @@
               <input matInput placeholder="O seu código postal">
             </mat-form-field>
           </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="col col-md-6 p-3">
-      <div class="row">
-        <form>
+        </div>
+      </form>
+  
+      <form>
+        <div class="row">
           <div class="col"> 
             <mat-form-field appearance="fill">
               <mat-label>Marca da sua máquina</mat-label>
@@ -74,23 +71,22 @@
           <div class="col">
             <mat-form-field appearance="fill">
               <mat-label>Mensagem</mat-label>
-              <textarea rows="10" matInput placeholder="Descreva a avaria da sua máquina"></textarea>
+              <textarea rows="5" matInput placeholder="Descreva a avaria da sua máquina"></textarea>
             </mat-form-field>
           </div>
 
-          <div class="col">
+          <div class="col p-4">
             <div class="row">
-              <div class="col">
-                <button mat-button (click)="onNoClick()">Cancelar</button>
+              <div class="col-12">
+                <button class="width-100 height-40 mb-3" mat-button (click)="onNoClick()">Cancelar</button>
               </div>
-              <div class="col">
-                <button class="width-100" mat-button [mat-dialog-close]="" color="impoace" cdkFocusInitial>Submeter</button>
+              <div class="col-12">
+                <button class="width-100 height-40" mat-button [mat-dialog-close]="" color="impoace" cdkFocusInitial>Submeter</button>
               </div>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
+        </div>
+      </form>
 
-  </div>
+  </mat-dialog-content>
 </div>
