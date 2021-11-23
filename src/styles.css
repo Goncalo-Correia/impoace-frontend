@@ -91,6 +91,10 @@ body {
     justify-content: end;
 }
 
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
 /*---- PADDING ----*/
 .pl-5 {
     padding-left: 5px;
@@ -190,14 +194,46 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 350px) {
-    .mat-form-field-wrapper {
-      width: 100%;
+.mat-form-field-wrapper {
+    width: 100%;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+/* ---- Responsive CSS (media queries) ----*/
+
+.responsive-padding-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    .responsive-padding-2 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
-@media only screen and (min-width: 480px) {
-    .mat-form-field-wrapper {
-      width: 500px;
+.responsive-align-right {
+    text-align: right;
+    justify-content: end;
+}
+
+.responsive-align-left {
+    text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+    .responsive-align-right {
+        text-align: center;
+        justify-content: center;
     }
+    
+    .responsive-align-left {
+        text-align: center;
+        justify-content: center;
+    }
+    
 }

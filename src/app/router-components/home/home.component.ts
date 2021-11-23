@@ -21,13 +21,13 @@ export class HomeComponent {
     }
 
     openDialog(): void {
-        const dialogRef = this.dialog.open(Dialog_HomeReport, {
-          data: {label: "Relatório de reparação"}
-        });
-    
-        dialogRef.afterClosed().subscribe(result => {
-          console.log('The dialog was closed');
-        });
+      const dialogRef = this.dialog.open(Dialog_HomeReport, {
+        data: {label: "Relatório de reparação"}
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        console.log('The dialog was closed');
+      });
     }
 
     routerChange(): void {
