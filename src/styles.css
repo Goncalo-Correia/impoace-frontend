@@ -209,13 +209,6 @@ body {
     padding-right: 5px;
 }
 
-@media only screen and (max-width: 480px) {
-    .responsive-padding-2 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
-
 .responsive-align-right {
     text-align: right;
     justify-content: end;
@@ -225,7 +218,16 @@ body {
     text-align: left;
 }
 
+.responsive-font-size {
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 480px) {
+    .responsive-padding-2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
     .responsive-align-right {
         text-align: center;
         justify-content: center;
@@ -234,6 +236,10 @@ body {
     .responsive-align-left {
         text-align: center;
         justify-content: center;
+    }
+
+    .responsive-font-size {
+        font-size: 10px;
     }
     
 }
