@@ -1,0 +1,31 @@
+.store-menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.store-menu-item {
+    font-size: 15px;
+    color: black;
+}
+
+.store-menu-item:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.store-menu-item-icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.store-submenu-item {
+    font-size: 15px;
+}
+
+.store-submenu-item:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}

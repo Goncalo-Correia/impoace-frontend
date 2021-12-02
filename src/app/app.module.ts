@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 
 import { StoreComponent } from './router-components/store/store.component';
+import { StoreMenuComponent } from './store-components/store-menu-component/store-menu.component';
 import { ContactBarComponent } from './bottom-bar-component/bottom-bar.component';
 import { Dialog_HomeReport } from './router-components/home/home.component';
 
@@ -26,7 +27,8 @@ import { Dialog_HomeReport } from './router-components/home/home.component';
     AppComponent,
     StoreComponent,
     Dialog_HomeReport,
-    ContactBarComponent
+    ContactBarComponent,
+    StoreMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<div class="pb-3">
+
+    <div class="store-menu-title pb-2">Peças e acessórios</div>
+
+    <div class="row">
+
+        <div class="col-auto">
+            <div class="row" *ngFor="let menuItem of menuDataStructure; let i = index">
+                <div class="col store-menu-item py-2" (click)="onClick_menuItem(i)">{{ menuItem.label }}</div>
+                <div class="col-auto store-menu-item-icon" *ngIf="menuItem.id == selectedMenuItem.id">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-auto pl-50">
+            <div *ngFor="let category of selectedMenuItem.categories; let i = index">
+                <div class="py-2 store-submenu-item" (click)="onClick_category(i)">{{ category.label }}</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

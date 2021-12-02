@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'impoace-frontend';
 
   private last_scroll_position: number = 0;
+  isOnStore: boolean = false;
 
   constructor(private router: Router) {
     router.events.subscribe(val => {
@@ -20,6 +21,7 @@ export class AppComponent {
         } else {
           this.scrollToTop();
         }
+        this.isOnStore = val.url == "/Store";
       }
     });
   }
