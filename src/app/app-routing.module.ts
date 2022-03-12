@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './router-components/home/home.component';
-import { StoreComponent } from './router-components/store/store.component';
-import { ContactComponent } from './router-components/contact/contact.component';
-import { CartComponent } from './router-components/cart/cart.component';
+import { HomeComponent } from './components/router-components/home/home.component';
+import { StoreComponent } from './components/router-components/store/store.component';
+import { ContactComponent } from './components/router-components/contact/contact.component';
+import { CartComponent } from './components/router-components/cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
