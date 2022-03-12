@@ -1,0 +1,11 @@
+import { Injectable } from "@angular/core";
+
+export class ApiService {
+
+    private token : string = "AQAAANCMnd8BFdERjHoAwE_Cl-sBAAAAqL5vdF-cJ0aKIgI_Dn-w8AAAAAACAAAAAAAQZgAAAAEAACAAAABGaEwqUcoTYafLZPbwRQyiYIWNa6ig8NdDCm2SoTan-wAAAAAOgAAAAAIAACAAAAA_Hjnq71kJBmgb01hhs4Tl6GA_Kmr1LDgWjSUEjHyFXPAAAADw9F8MK-sqrxBbJuLCltgf95ER56kZ05Vd5u_XRZ_5TImG7XsRubHIiUtyUMVVKG9zuLWPeYsUNio6aVdJEXmJchlrQjVskJ808rn2SqtcNiNGw6p3-WtH_0jSt5X6hNfjGzZQ_inO_e0P0C4Hwyu353fTVggI7V_dnnk9RJv6ryhEchwDeS-otpNUh421mib1XFng_jWUTovqG6iqUyi9L3c5DUVR7LYwYih4Va9r_Lan9cUYP8mpWQ5-fAwwv8Lje2TGWdvwWGAhh-d3LrwfZWqtOmwbqxJ-onvWpl_dTeE96phmmbfHZrTpMLivxmFAAAAAVBOaEkf5kaDa_zLdJk-gemzxfnFjuQhQH8AU3VVmGrBRcHZE8XNdI5WMVMvJWsLkvRlamrOtITcacONnI5JKqg";
+
+    constructor() {
+
+    }
+
+}

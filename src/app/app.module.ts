@@ -16,6 +16,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { StoreComponent } from './router-components/store/store.component';
 import { StoreMenuComponent } from './store-components/store-menu-component/store-menu.component';
@@ -43,7 +44,8 @@ import { Dialog_HomeReport } from './router-components/home/home.component';
     MatExpansionModule,
     MatDialogModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
   ],
   entryComponents: [
     Dialog_HomeReport

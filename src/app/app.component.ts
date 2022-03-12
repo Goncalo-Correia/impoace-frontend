@@ -12,6 +12,7 @@ export class AppComponent {
 
   private last_scroll_position: number = 0;
   isOnStore: boolean = false;
+  isSearching: boolean = false;
 
   constructor(private router: Router) {
     router.events.subscribe(val => {
@@ -36,6 +37,10 @@ export class AppComponent {
       this.showHideGoToTopButton(false);
     }
     this.last_scroll_position = window.pageYOffset;
+  }
+
+  showHideSearch() {
+    this.isSearching = !this.isSearching;
   }
 
   showHideGoToTopButton(isToShow: boolean) {
