@@ -19,7 +19,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { StoreComponent } from './components/router-components/store/store.component';
-import { StoreMenuComponent } from './components/store-components/store-menu.component';
+import { StoreMenuComponent } from './components/store-components/store-menu.component/store-menu.component';
+import { StoreProductsComponent } from './components/store-components/store-products.component/store-products.component';
 import { ContactBarComponent } from './components/layout-components/bottom-bar-component/bottom-bar.component';
 import { Dialog_HomeReport } from './components/router-components/home/home.component';
 
@@ -29,7 +30,8 @@ import { Dialog_HomeReport } from './components/router-components/home/home.comp
     StoreComponent,
     Dialog_HomeReport,
     ContactBarComponent,
-    StoreMenuComponent
+    StoreMenuComponent,
+    StoreProductsComponent
   ],
   imports: [
     BrowserModule,

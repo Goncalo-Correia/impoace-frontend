@@ -3,8 +3,36 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: "https://localhost:7134"
 };
+
+export const apiEndpoints = {
+  address: {
+    get: "/address/"
+  },
+  binaryFile: {
+    get: "/binaryFile/"
+  },
+  class: {
+    get:"/class/"
+  },
+  order: {
+    get: "/order/"
+  },
+  product: {
+    get: "/product/"
+  },
+  subClass: {
+    get: "/subClass/"
+  },
+  superClass: {
+    get: "/superClass/"
+  },
+  user: {
+    get: "/user/"
+  }
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
