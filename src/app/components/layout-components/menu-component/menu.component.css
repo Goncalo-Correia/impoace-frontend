@@ -1,0 +1,26 @@
+.active-router-link {
+    color: var(--primary-color);
+}
+
+.toolbar-icon {
+    box-shadow: 0px 0px 0px 1px #e7e7e9 inset;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.app-search-bar {
+    font-size: 12px;
+}
+
+.app-search-bar .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+}

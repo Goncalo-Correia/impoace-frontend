@@ -1,0 +1,33 @@
+<div id="navBar" class="nav-bar">
+    <div class="shadow">
+        <div class="container">
+        <div class="row">
+            <div class="d-flex col justify-content-between fs-nav-bar font-bold">
+            <div routerLink="/" routerLinkActive="active-router-link" class="cursor-pointer align-self-center">
+                <img src="assets\images\impoace_logo.png" alt="Impoace">
+            </div>
+            <div routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center">Loja</div>
+            <div routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center">Serviços</div>
+            <div routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer height-80 d-flex align-items-center">Contatos</div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="align-items-center d-flex">
+                <i class="cart-icon fas fa-search text-dark mx-2"></i>
+                <mat-form-field class="app-search-bar" appearance="fill">
+                    <input type="text" matInput placeholder="Pesquise um produto">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+                <div>
+                    <i matBadge="0" matBadgeColor="warn" class="cart-icon fas fa-cart-arrow-down text-dark mx-2"></i>
+                    <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                    <i routerLink="/Cart" routerLinkActive="active-router-link" matBadge="1" matBadgeColor="warn" class="cart-icon fas fa-cart-arrow-down text-dark mx-2"></i>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
