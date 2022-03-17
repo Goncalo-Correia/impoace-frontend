@@ -24,3 +24,29 @@
 .cart-icon:hover {
     cursor: pointer;
 }
+
+.sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.sidebar-shadow {
+    background-color: black;
+    opacity: 0.8;
+    width: 21%;
+    height: 100%;
+    position: fixed;
+    right: -1%;
+    top: 0;
+}
+
+.sidebar-content {
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}

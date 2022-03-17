@@ -17,6 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { StoreComponent } from './components/router-components/store/store.component';
 import { MenuComponent } from './components/layout-components/menu-component/menu.component';
@@ -51,7 +52,8 @@ import { GoToTopButtonComponent } from './components/layout-components/gototopbu
     MatDialogModule,
     MatInputModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule
   ],
   entryComponents: [
     Dialog_HomeReport

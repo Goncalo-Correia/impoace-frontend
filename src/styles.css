@@ -56,6 +56,10 @@ body {
     font-weight: bold;
 }
 
+.font-normal {
+    font-weight: normal;
+}
+
 /*---- POSITION ----*/
 .position-relative {
     position: relative;
@@ -154,24 +158,6 @@ body {
     font-size: 25px;
 }
 
-@media only screen and (max-width: 480px) {
-    .fs-nav-bar {
-      font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .fs-nav-bar {
-      font-size: 13px;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    .fs-nav-bar {
-      font-size: 17px;
-    }
-}
-
 
 /* row */
 .row {
@@ -179,7 +165,6 @@ body {
 }
 
 /*---- ANUGLAR MATERIAL ----*/
-
   
 .mat-focused .mat-form-field-label{
     color: var(--primary-color) !important;
