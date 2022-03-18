@@ -28,7 +28,7 @@ export class AppComponent {
 
   scrollToServices(): void {
     var height = document.getElementById("homeCardImage")!.offsetTop; 
-    var navbarHeight = document.getElementById("navBar")!.offsetHeight;
+    var navbarHeight = document.getElementById("nav-bar")!.offsetHeight;
     height -= navbarHeight;
     window.scrollTo(0, height)
   }
