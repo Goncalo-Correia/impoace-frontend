@@ -15,7 +15,8 @@ export const apiEndpoints = {
     get: "/binaryFile/"
   },
   class: {
-    get:"/class/"
+    get: "/class/",
+    getAll: "/class"
   },
   order: {
     get: "/order/"
@@ -24,10 +25,12 @@ export const apiEndpoints = {
     get: "/product/"
   },
   subClass: {
-    get: "/subClass/"
+    get: "/subClass/",
+    getAll: "/subClass"
   },
   superClass: {
-    get: "/superClass/"
+    get: "/superClass/",
+    getAll: "/superClass"
   },
   user: {
     get: "/user/"

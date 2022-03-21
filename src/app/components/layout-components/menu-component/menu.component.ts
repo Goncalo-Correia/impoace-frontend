@@ -8,7 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 
 export class MenuComponent implements OnInit {
 
-    private minDesktopWidth: number = 480;
+    private minDesktopWidth: number = 600;
     public isDesktop: boolean = true;
     public showSidebar: boolean = false;
 
