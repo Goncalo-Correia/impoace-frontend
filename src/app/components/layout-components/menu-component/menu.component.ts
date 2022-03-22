@@ -9,11 +9,14 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
     private minDesktopWidth: number = 600;
-    public isDesktop: boolean = true;
-    public showSidebar: boolean = false;
+    isDesktop: boolean = true;
+    showSidebar: boolean = false;
+    showStoreMenu: boolean = false;
 
     ngOnInit() {
         this.isDesktop = window.innerWidth >= this.minDesktopWidth;
+        console.log(this.showStoreMenu);
+        
     }
 
     @HostListener('window:resize', ['$event'])
@@ -23,5 +26,13 @@ export class MenuComponent implements OnInit {
 
     toggleSidebar() {
         this.showSidebar = !this.showSidebar;
+    }
+
+    hideStore() {
+        this.showStoreMenu = false;
+    }
+
+    showStore() {
+        this.showStoreMenu = true;
     }
 }

@@ -10,11 +10,11 @@ export class SuperClassService {
     constructor(private http: HttpClient) {
     }
 
-    get(id: number) {
+    get(id: number): Observable<SuperClass> {
         return this.http.get<SuperClass>(environment.apiUrl + apiEndpoints.superClass.get + id);
     }
 
-    getAll() {
-        return this.http.get<SuperClass>(environment.apiUrl + apiEndpoints.superClass.getAll);
+    getAll(): Observable<SuperClass[]> {
+        return this.http.get<SuperClass[]>(environment.apiUrl + apiEndpoints.superClass.getAll);
     }
 }

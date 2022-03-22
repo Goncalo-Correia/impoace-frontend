@@ -23,6 +23,10 @@ body {
     color: #fff;
 }
 
+.color-black {
+    color: black;
+}
+
 .color-primary {
     color: var(--primary-color);
 }

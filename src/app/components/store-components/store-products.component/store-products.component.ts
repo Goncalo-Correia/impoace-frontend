@@ -13,6 +13,7 @@ export class StoreProductsComponent implements OnInit {
 
     private productService: ProductService;
     product: any;
+    products: any;
 
     constructor(private http: HttpClient) {
         this.productService = new ProductService(http);
