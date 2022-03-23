@@ -16,7 +16,8 @@ export const apiEndpoints = {
   },
   class: {
     get: "/class/",
-    getAll: "/class"
+    getAll: "/class",
+    getClassesBySuperClassId: "/class/superClassId/"
   },
   order: {
     get: "/order/"

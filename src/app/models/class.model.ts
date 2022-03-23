@@ -1,7 +1,7 @@
-export interface Class {
-    id: number;
-    order: number;
-    name: string;
-    description: string;
-    superClassId: number;
+export class Class {
+    Id: number | undefined;
+    Order: number | undefined;
+    Name: string | undefined;
+    Description: string | undefined;
+    SuperClassId: number | undefined;
 }
