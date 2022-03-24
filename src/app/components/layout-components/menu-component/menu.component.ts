@@ -9,30 +9,47 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
     private minDesktopWidth: number = 600;
+    private minSearchLength: number = 3;
     isDesktop: boolean = true;
-    showSidebar: boolean = false;
+    showMenuSidebar: boolean = false;
+    showCartSidebar: boolean = false;
     showStoreMenu: boolean = false;
+    showSearchMenu: boolean = false;
+    searchText: string | undefined;
+    searchText_hasMinimumLength: boolean = false;
 
     ngOnInit() {
-        this.isDesktop = window.innerWidth >= this.minDesktopWidth;
+        this.onResize();
         console.log(this.showStoreMenu);
-        
     }
 
     @HostListener('window:resize', ['$event'])
-    onResize(event: any) {
+    private onResize() {
         this.isDesktop = window.innerWidth >= this.minDesktopWidth;
     }
 
-    toggleSidebar() {
-        this.showSidebar = !this.showSidebar;
+    onClick_toggleMenuSidebar() {
+        this.showMenuSidebar = !this.showMenuSidebar;
     }
 
-    hideStore() {
+    onClick_toggleCartSidebar() {
+        this.showCartSidebar = !this.showCartSidebar;
+    }
+
+    onClick_toggleSearchMenu() {
+        this.showSearchMenu = !this.showSearchMenu;
+    }
+
+    onClick_hideStore() {
         this.showStoreMenu = false;
     }
 
-    showStore() {
+    onClick_showStore() {
         this.showStoreMenu = true;
+    }
+
+    onChange_searchInput(event: any) {
+        this.searchText = event.target.value;
+        console.log(event.target.value);
     }
 }

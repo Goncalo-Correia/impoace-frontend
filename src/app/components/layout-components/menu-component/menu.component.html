@@ -3,32 +3,46 @@
         <div class="container">
             <div class="row">
                 <div class="d-flex col justify-content-between font-bold">
-                    <div routerLink="/" routerLinkActive="active-router-link" class="cursor-pointer align-self-center" (click)="hideStore()">
+                    <div routerLink="/" routerLinkActive="active-router-link" class="cursor-pointer align-self-center" (click)="onClick_hideStore()">
                         <img src="assets\images\impoace_logo.png" alt="Impoace">
                     </div>
-                    <div *ngIf="isDesktop" routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="showStore()">Loja</div>
-                    <div *ngIf="isDesktop" routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="hideStore()">Serviços</div>
-                    <div *ngIf="isDesktop" routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="hideStore()">Contatos</div>
+                    <div *ngIf="isDesktop && !showSearchMenu" routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="onClick_showStore()">Loja</div>
+                    <div *ngIf="isDesktop && !showSearchMenu" routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="onClick_hideStore()">Serviços</div>
+                    <div *ngIf="isDesktop && !showSearchMenu" routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer fs-20 height-80 d-flex align-items-center" (click)="onClick_hideStore()">Contatos</div>
+                    <div *ngIf="showSearchMenu" class="height-80 d-flex align-items-center">
+                        <input type="text" class="menu-search-input" placeholder="Pesquisa (min. 3 caracteres)" (keyUp)="onChange_searchInput($event)">
+                    </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <i class="fas fa-search text-dark mx-2"></i>
-                        <i matBadge="0" matBadgeColor="warn" class="fas fa-cart-arrow-down text-dark mx-2"></i>
-                        <i *ngIf="!isDesktop" class="fas fa-bars text-dark mx-2" (click)="toggleSidebar()"></i>
+                        <i *ngIf="!showSearchMenu" class="fas fa-search cursor-pointer text-dark mx-2" (click)="onClick_toggleSearchMenu()"></i>
+                        <i *ngIf="showSearchMenu" class="fas fa-times cursor-pointer text-dark mx-2" (click)="onClick_toggleSearchMenu()"></i>
+                        <i matBadge="0" matBadgeColor="warn" class="fas fa-cart-arrow-down cursor-pointer text-dark mx-2" (click)="onClick_toggleCartSidebar()"></i>
+                        <i *ngIf="!isDesktop" class="fas fa-bars text-dark mx-2" (click)="onClick_toggleMenuSidebar()"></i>
                     </div>
                 </div>
-                <div *ngIf="showSidebar">
-                    <div class="sidebar">
-                        <div class="sidebar-content row">
+                <div *ngIf="showMenuSidebar">
+                    <div class="menu-sidebar">
+                        <div class="menu-sidebar-content row">
                             <div class="row">
                                 <div class="col">Voltar</div>
-                                <div class="col-auto" (click)="toggleSidebar()">X</div>
+                                <div class="col-auto" (click)="onClick_toggleMenuSidebar()">X</div>
                             </div>
-                            <div routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="toggleSidebar()">Loja</div>
-                            <div routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="toggleSidebar()">Serviços</div>
-                            <div routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="toggleSidebar()">Contatos</div>
+                            <div routerLink="/Store" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="onClick_toggleMenuSidebar()">Loja</div>
+                            <div routerLink="/Services" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="onClick_toggleMenuSidebar()">Serviços</div>
+                            <div routerLink="/Contact" routerLinkActive="active-router-link" class="cursor-pointer font-normal height-80 fs-25 d-flex align-items-center" (click)="onClick_toggleMenuSidebar()">Contatos</div>
                         </div>
-                        <div class="sidebar-shadow"></div>
+                        <div class="menu-sidebar-shadow"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div *ngIf="showCartSidebar">
+            <div class="cart-sidebar">
+                <div class="cart-sidebar-content row">
+                    <div class="row">
+                        <div class="col-auto cursor-pointer" (click)="onClick_toggleCartSidebar()">X</div>
+                    </div>
+                </div>
+                <div class="cart-sidebar-shadow"></div>
             </div>
         </div>
         <div *ngIf="showStoreMenu">

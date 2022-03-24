@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/models/product.model';
+import { ApiService } from 'src/app/services/api.service';
+import { apiEndpoints, environment } from 'src/environments/environment';
 
 @Component({
     selector: 'store-products',
@@ -11,17 +12,17 @@ import { Product } from 'src/app/models/product.model';
 
 export class StoreProductsComponent implements OnInit {
 
-    private productService: ProductService;
+    private apiService: ApiService;
     product: any;
     products: any;
 
     constructor(private http: HttpClient) {
-        this.productService = new ProductService(http);
+        this.apiService = new ApiService(http);
     }
 
     ngOnInit(): void {
-        this.productService.get(1).subscribe(data => {
-            this.product = data as Product
+        this.apiService.get(environment.apiUrl + apiEndpoints).subscribe(data => {
+            this.products = data.products
         });
     }
 
