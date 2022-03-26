@@ -80,7 +80,7 @@
 .cart-sidebar-shadow {
     background-color: black;
     opacity: 0.3;
-    width: 61%;
+    width: 76%;
     height: 100%;
     position: fixed;
     left: -1%;
@@ -94,7 +94,12 @@
     opacity: 1;
     z-index: 2;
     right: 0;
-    width:40%;
+    width:25%;
     height: 100%;
     padding: 10px;
+}
+
+.cart-checkout-button {
+    position: fixed;
+    bottom: 50px;
 }

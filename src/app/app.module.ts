@@ -26,6 +26,7 @@ import { StoreMenuComponent } from './components/store-components/store-menu.com
 import { StoreProductsComponent } from './components/store-components/store-products.component/store-products.component';
 import { ContactBarComponent } from './components/layout-components/bottom-bar-component/bottom-bar.component';
 import { GoToTopButtonComponent } from './components/layout-components/gototopbutton-component/go-to-top-button.component';
+import { MatLabel } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [

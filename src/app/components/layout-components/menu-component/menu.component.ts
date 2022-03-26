@@ -24,13 +24,13 @@ export class MenuComponent implements OnInit {
     showCartSidebar: boolean = false;
     showStoreMenu: boolean = false;
     showSearchMenu: boolean = false;
+    shoppingCartProducts: Product[] | undefined;
 
     constructor(public dialog: MatDialog) {
     }
 
     ngOnInit() {
         this.onResize();
-        console.log(this.showStoreMenu);
     }
 
     @HostListener('window:resize', ['$event'])
@@ -54,6 +54,10 @@ export class MenuComponent implements OnInit {
         dialogRef.afterClosed().subscribe(result => {
           console.log('The dialog was closed');
         });
+    }
+
+    onClick_goToCart() {
+        this.onClick_toggleCartSidebar();
     }
 
     onClick_hideStore() {

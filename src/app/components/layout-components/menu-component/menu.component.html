@@ -35,10 +35,21 @@
             <div class="cart-sidebar">
                 <div class="cart-sidebar-content row">
                     <div class="row">
-                        <div class="col-auto cursor-pointer" (click)="onClick_toggleCartSidebar()">X</div>
+                        <div class="col fs-17 font-bold">Carrinho de compras</div>
+                        <div class="col-auto cursor-pointer d-flex align-items-center fas fa-times" (click)="onClick_toggleCartSidebar()"></div>
+                    </div>
+                    <div class="row">
+                        <mat-selection-list #mat_shoppingcartproducts>
+                            <mat-list-option *ngFor="let shoppingCartProduct of shoppingCartProducts">
+                              {{shoppingCartProduct}}
+                            </mat-list-option>
+                        </mat-selection-list>
+                    </div>
+                    <div class="cart-checkout-button">
+                        <button routerLink="/Cart" routerLinkActive="active-router-link" mat-button color="impoace" (click)="onClick_goToCart()">Finalizar compra</button>
                     </div>
                 </div>
-                <div class="cart-sidebar-shadow"></div>
+                <div class="cart-sidebar-shadow" (click)="onClick_toggleCartSidebar()"></div>
             </div>
         </div>
         <div *ngIf="showStoreMenu">

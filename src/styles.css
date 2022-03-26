@@ -103,6 +103,10 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
 /*---- PADDING ----*/
 .pl-5 {
     padding-left: 5px;
