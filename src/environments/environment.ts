@@ -23,7 +23,9 @@ export const apiEndpoints = {
     get: "/order/"
   },
   product: {
-    get: "/product/"
+    get: "/product/",
+    getAll: "/product",
+    searchProducts: "/searchProducts/"
   },
   subClass: {
     get: "/subClass/",

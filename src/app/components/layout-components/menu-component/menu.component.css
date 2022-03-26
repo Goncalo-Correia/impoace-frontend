@@ -19,6 +19,30 @@
      padding: 0 20px 0 20px;
 }
 
+.menu-search-empty-placeholder {
+    height: 200px;
+    background-color: lightgray;
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px)  {
+    .menu-search-dialog {
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 600px)  {
+    .menu-search-dialog {
+        width: 500px;
+        height: 400px;
+    }
+}
+
 .menu-sidebar {
     position: fixed;
     width: 100%;

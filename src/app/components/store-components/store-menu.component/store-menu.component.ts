@@ -40,7 +40,7 @@ export class StoreMenuComponent{
     }
 
     private classService_getClassesBySuperClassId(id: number | undefined): void {
-        this.apiService.get(environment.apiUrl + apiEndpoints.class.getAll + id).subscribe(data => {
+        this.apiService.get(environment.apiUrl + apiEndpoints.class.getClassesBySuperClassId + id).subscribe(data => {
             this.classes = data.classes;
         }, error => {
             this.classes = error.classes;
