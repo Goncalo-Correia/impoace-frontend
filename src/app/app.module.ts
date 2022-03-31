@@ -18,6 +18,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatLabel } from '@angular/material/form-field';
+import { MatFormField } from '@angular/material/form-field';
 
 import { StoreComponent } from './components/router-components/store/store.component';
 import { Dialog_MenuSearch, MenuComponent } from './components/layout-components/menu-component/menu.component';
@@ -26,7 +28,7 @@ import { StoreMenuComponent } from './components/store-components/store-menu.com
 import { StoreProductsComponent } from './components/store-components/store-products.component/store-products.component';
 import { ContactBarComponent } from './components/layout-components/bottom-bar-component/bottom-bar.component';
 import { GoToTopButtonComponent } from './components/layout-components/gototopbutton-component/go-to-top-button.component';
-import { MatLabel } from '@angular/material/form-field';
+import { ContactComponent } from './components/router-components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { MatLabel } from '@angular/material/form-field';
     StoreProductsComponent,
     MenuComponent,
     Dialog_MenuSearch,
-    GoToTopButtonComponent
+    GoToTopButtonComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,9 @@ import { MatLabel } from '@angular/material/form-field';
     MatInputModule,
     MatButtonModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatLabel,
+    MatFormField
   ],
   entryComponents: [
     Dialog_HomeReport
