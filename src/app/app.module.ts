@@ -58,9 +58,7 @@ import { ContactComponent } from './components/router-components/contact/contact
     MatInputModule,
     MatButtonModule,
     MatMenuModule,
-    MatSidenavModule,
-    MatLabel,
-    MatFormField
+    MatSidenavModule
   ],
   entryComponents: [
     Dialog_HomeReport
